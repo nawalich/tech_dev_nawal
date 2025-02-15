@@ -1,0 +1,63 @@
+
+body{
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+.plan{
+    margin-right:17em ;
+    margin-left:17em ;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    width:60em;
+    height:100%;
+    position:absolute;
+    border:  0.5px solid;
+
+}
+.vertical{
+    margin-left: 20em;
+    margin-right: 80em;
+    width: 15em;
+    height:100%;
+    background-color: rgba(228,212,196,255);
+    z-index: 2;
+    position: absolute;
+    overflow-x:hidden;
+    
+    
+}
+.horizental{
+    margin-top: 20px;
+    height: 16em;
+    width:60em;
+    background-color: rgb(256,244,236);
+    z-index: 3;
+    position:absolute;
+    margin-right:-10em ;
+    margin-left:273px ;
+   
+}
+.photo{
+    height: 16em;
+    width: 15em;
+    position: absolute;
+    z-index: 4;
+    background-image:url("nawall.jpg");
+    background-size: cover;
+    margin-left: 20em;
+    margin-right: 80em;
+    margin-top: 20px;
+    border-radius: 50%;
+   
+}
+.nom{
+    font-family: Ｔｙｐｅ ｓｏｍｅｔｈｉｎｇ ｔｏ ｓｔａｒｔ;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 10em;
+    letter-spacing: 5pt;
+    color:rgb(116, 65, 65); 
+    text-decoration: solid;
+    font-size:x-large;
+}
