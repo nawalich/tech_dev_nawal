@@ -1,253 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cv.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>CV</title>
+</head>
+<body>
+    <div class="plan">
+       
+        <!--contenu-->
+        <div class="contenu">
+            <div class="formation">
+                <pre>
+                     
 
-html,body{
-    margin:0;
-    padding:0;
-    height: 100%;
-    color: #58493b;
-    font-family: 'Calibri','Times New Roman','Stencil Std, fantasy',sans-serif;
-}
-.plan{
-    margin-right:17em ;
-    margin-left:17em ;
-    background-color: rgb(255, 255, 255);
-    z-index: 1;
-    width:52em;
-    height:160%;
-    position:absolute;
-    border:  0.5px solid;
 
-}
-.vertical{
-    margin-left: 20em;
-    margin-right: 80em;
-    width: 17.2em;
-    height:160%;
-    background-color: rgba(228,212,196,255);
-    z-index: 2;
-    position: absolute;
-    overflow-x:hidden;
-    overflow-y: hidden;
+
+
+
+
+
+
+
+
+
+                    .
+
+
+
+                </pre>
+                <h1 class="formation">F O R M A T I O N S</h1>
+                <div class="bloc11">
+                    <pre class="formation2"><span style="font-style: italic; font-weight:50; font-size:small; color:#806954; margin-top:-5em;">
+    Octobre2024 – Juin 2027 (prévu)</span><span style="font-weight:bold; color:rgb(94, 65, 65);">
+Cycle ingénieur en Ingénierie des Données – École 
+Nationale des Sciences Appliquées (ENSA),Khouribga</span><span style="font-style: italic;  font-size:small; font-weight:50;color:#806954;">
+    Septembre 2022 – Juin 2024</span><span style="font-weight:bold;color:rgb(94, 65, 65);">
+DEUG en Mathématiques Appliquées et Informatique –
+Université Mohammed V, Faculté des Sciences, Rabat </span><span style="font-style: italic;  font-size:small; font-weight:50;color:#806954;">
+    Septembre 2021 – Juin 2022</span><span style="font-weight:bold;color:rgb(94, 65, 65);">
+Baccalauréat en Sciences Mathématiques (SM B) – Témara</span>
+                    </pre>
+                </div>
+                <h1 class="projet">PROJETS ACADÉMIQUES</h1>
+                <div class="corps_proojet">
+                    <pre style=" margin-top:-1.5em;"><span style="font-style: italic; margin-top:-5em; color:#806954;">
+    Octobre 2024 – Décembre 2024</span>
+                    </pre>
+                    <h1 class="nom_projet">Système de gestion des compagnies aériennes</h1>
+                    <ul class="choix2">
+                        <li class="textProjet">Conception et mise en œuvre d'un système pour gérer
+                            efficacement les vols, le personnel et les avions .</li>
+                        <li class="textProjet">Modélisation des données et création d'une base de
+                            données robuste avec MySQL.</li>
+                        <li class="textProjet">Développement d’une application web dynamique en
+                            utilisant Python, Flask, HTML, CSS et JavaScript pour une
+                            interface utilisateur fluide et responsive</li><br><br>
+                    </ul>
+                </div><!--fin de projet-->
+                <div class="competences">
+                    <h1 class="nom_projet">COMPÉTENCES TECHNIQUES</h1>
+                    <ul class="choix2">
+                       <li ><h1 class="titre1">Langages de Programmation</h1></li>
+                       <pre class="partie1">  Python, Java, C, JavaScript , PHP</pre>
+                       <li><h1 class="nom_projet2">Développement Web</h1></li>
+                       <pre class="partie1">  HTML, CSS</pre>
+                       <li><h1 class="nom_projet2">Bases de Données & Analyse de Données</h1></li>
+                       <pre class="partie1">  Gestion des bases de données : MySQL
+  Bibliothèques pour l'analyse de données : Pandas</pre><br>
+                       <li><h1 class="nom_projet2">Outils & Logiciels</h1></li>
+                        <ul>
+                                <li class="h2">Développement & IDE : <span style="font-size: medium; font-weight:5px ; color:rgb(91, 58, 58);
+">Vs Code</span></li>
+                                <li class="h2">Gestion de version : <span style="font-size: medium; font-weight:5px ; color:rgb(91, 58, 58);
+                                    ">Git, GitHub</span> </li>
+                                <li class="h2">Calcul et Simulation : <span style="font-size: medium; font-weight:5px ; color:rgb(91, 58, 58);
+                                    ">MATLAB</span></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
     
+    </div>
+    <div class="vertical">
+           <pre>
+
+
+
+
+            .
+
+
+
+
+
+
+            .
+
+
+
+
+
+
+
+
+            <!--un peu d'arnaque-->
+           </pre>
+           <div class="bloc1">
+            <h1 class="contact">contact</h1>
+            <img src="tel.png" class="tel">
+            <p class="barre1">|</p>
+            <pre class="num"> +212643613792</pre>
+            <img src="mail.png" class="mail">
+            <p class="barre2">|</p>
+            <pre class="num"> nawal.ichene@um5r.ac.ma</pre>
+            <img src="map.png" class="map">
+            <p class="barre3">|</p>
+            <pre class="num"> Beni Amir,Khouribga</pre>
+        </div><!--fin de contact-->
+        <div class="bloc2">
+            <h1 class="profil">profil</h1>
+            <div class="text">
+                <pre>
+  Je suis une étudiante dévouée en
+  informatique et en ingénierie des
+  données, avec des solides
+  compétences en programmation,
+  analyse de données et gestion de
+  bases de données, désireuse de
+  résoudre des problèmes
+  complexes et de contribuer à des
+  projets innovants.
+                </pre>
+            </div>
+        </div><!--fin de profil-->
+            <div class="bloc3">
+                <h1 class="langues">langues</h1>
+                <ul>
+                    <li class="choix">Arabe : Langue maternelle</li>
+                    <li class="choix">Français : Courant</li>
+                    <li class="choix">Anglais : Courant</li>
+                </ul>
+                </div><!--fin de langues-->
+                <div class="bloc4">
+                    <h1 class="langues">qualités</h1>
+                    <ul>
+                        <li class="qualités">communication</li>
+                        <li class="qualités">collaboration et travail en éequipe </li>
+                        <li class="qualités">rigueur et organisation</li>
+                        <li class="qualités">esprit critique et analytique</li>
+                        <li class="qualités">Curiosité intellectuelle</li>
+                        <li class="qualités">Adaptabilité</li>
+                    </ul>
+                    </div><!--fin de qaulites-->
+            <div class="text">
+                
+            </div>
+            </div>
+    </div>
+</div>
+    <div class="horizental">
+            <p class="nom">ICHENE NAWAL </p>
+            <pre class="job">
+                    futur ingénieur
+                    en ingénierie
+                    des données
+            </pre>
+    </div>
+    <div class="photo">
+        
+    </div>
     
-}
-.horizental{
-    margin-top: 20px;
-    height: 20em;
-    width:52em;
-    background-color: rgb(256,244,236);
-    z-index: 3;
-    position:absolute;
-    margin-right:-10em ;
-    margin-left:273px ;
-   
-}
-.photo{
-    height: 16em;
-    width: 15em;
-    position: absolute;
-    z-index: 4;
-    background-image:url("nawall.jpg");
-    background-size: cover;
-    margin-left: 20em;
-    margin-right: 80em;
-    margin-top: 40px;
-    border-radius: 50%;
-   
-}
-.nom{
-    font-family: Ｔｙｐｅ ｓｏｍｅｔｈｉｎｇ ｔｏ ｓｔａｒｔ;
-    text-align: center;
-    margin-top: 15px;
-    margin-left: 10em;
-    letter-spacing: 5pt;
-    color:rgb(116, 65, 65); 
-    text-decoration: solid;
-    font-size:x-large;
-}
-.job{
-    font-family: Abril Fatface;
-    text-align: center;
-    text-transform: uppercase;
-    word-spacing: 7pt;
-    font-size:270%;
-    font-weight: bold;
-    color:#705c49;
-    margin-left:-40px;
-}
-.contact{
-    color:#705c49;
-    font-size:larger;
-    font-weight: 600;
-    letter-spacing: 3pt;
-    text-transform: uppercase;
-    text-align: center;
-    margin-left: -70px;
-}
-.tel{
-    width: 26px;
-    height: 27px ;
-    margin-left: 1.3em;
-    margin-right: 7px;
-    float:left;
-}
-.barre1{
-    color: #705c49;
-    font-weight:bolder;
-    font-size: x-large;
-    margin-top: -3px;
-    margin-right: -5px;
-    float: left;
-    
-}
-.barre2{
-    color: #705c49;
-    font-weight:bolder;
-    font-size: x-large;
-    margin-top: -3px;
-    margin-right: -5px;
-    margin-left: -5px;
-    float: left;
-    
-}
-.barre3{
-    color: #705c49;
-    font-weight:bolder;
-    font-size: x-large;
-    margin-top: -3px;
-    margin-right: -5px;
-    margin-left: -7px;
-    float: left;
-    
-}
-
-.num{
-    color: #705c49;
-    font-size:large;
-
-    
-}
-.mail{
-    width: 26px;
-    height: 27px ;
-    margin-left: -40px;
-    float:left; 
-}
-.map{
-   margin-left: -40px;
-   float: left;
-
-}
-.profil{
-    margin-right: 6em;
-    margin-top: 2.5em;
-    margin-left: 2em;
-    color:#705c49;
-    font-size:larger;
-    font-weight: 600;
-    letter-spacing: 3pt;
-    text-transform: uppercase;
-    text-align:left;
-}
-.text{
-    color: #58493b;
-    font-weight:500;
-    font-size:300;
-    margin-top: -3px;
-    margin-right: -5px;
-    line-height: 15pt;
-    font-family:'Times New Roman';
-    
-}
-.langues{
-    margin-right: 6em;
-    margin-left: 2.2em;
-    margin-top: em;
-    font-size:larger;
-    font-weight: 600;
-    letter-spacing: 3pt;
-    text-transform: uppercase;
-    text-align:left; 
-
-}
-.choix{
-    line-height: 17pt;
-    letter-spacing: 0.7pt;
-    font-family:'Times New Roman';
-    font-weight: 50;
-}
-.qualités{
-    text-transform: capitalize;
-    font-family:'Times New Roman';
-    line-height: 17pt;
-    letter-spacing: 0.7pt;
-    font-weight: 50;
-
-}
-.contenu{
-    float:left;
-    margin-left: 22em;
-}
-.formation{
-    font-size: large;
-    color:#594b3d;
-}
-.formation2{
-
-    line-height: 15pt;
-}
-.bloc11{
-    margin-top: -25px;
-}
-.projet{
-    font-size: large;
-    color:#594b3d; 
-    letter-spacing: 2pt;
-}
-.nom_projet{
-    font-size: large;
-    font-weight: bold;
-    color:rgb(91, 58, 58);
-    margin-top: -1.8em;
-    margin-bottom: 17px;
-}
-.textProjet{
-    line-height: 15pt;
-    font-weight: 250;
-    
-}
-.choix2{
-    margin-top: -0.5em;
-    line-height: 14pt;
-}
-.titre1{
-    font-size: large;
-    color:#534335;
-}
-
-.partie1{
-    margin-top: -8px;
-}
-
-
-.nom_projet2{
-    font-size: large;
-    font-weight: bold;
-    color:rgb(91, 58, 58);
-    margin-top: -15px;
-    
-}
-.h2{
-    font-size:medium;
-    font-weight: bolder;
-    line-height: 19pt;
-    color:rgb(91, 58, 58);
-    list-style: circle;
-}
-.bloc3{
-    margin-top: 1em;
-}
-.bloc4{
-    margin-top: 30px;
-    line-height: 27pt;
-  
-}
+</body>
+</html>
