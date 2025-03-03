@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="section" style="margin-left: 60px;">
+    <div class="row">
+        <div class="col-lg-12"> <!-- Utilisation de col-lg-12 pour toute la largeur -->
+            <section class="section">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12"> <!-- Utilisation de col-lg-12 pour toute la largeur -->
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">New Inspection</h5>
+                                <!-- Formulaire de révision -->
+                                <form class="row g-3" method="POST" action="">
+                                    {{ form.hidden_tag() }}
+                                    <div class="col-12">
+                                        {{ form.NUMAV.label(class="form-label") }}
+                                        {% if form.NUMAV.errors %}
+                                            {{ form.NUMAV(class="form-control is-invalid") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.NUMAV.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.NUMAV(class="form-control") }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-12">
+                                        <!-- <label for="inputAnoma" class="form-label">Anomalie</label>
+                                        <input type="text" class="form-control" id="inputAnoma" name="anoma" placeholder="Entrez l'anomalie" required> -->
+                                        {{ form.ANOMA.label(class="form-label") }}
+                                        {% if form.ANOMA.errors %}
+                                            {{ form.ANOMA(class="form-control is-invalid") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.ANOMA.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.ANOMA(class="form-control") }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-12">
+                                        <!-- <label for="inputRepEff" class="form-label">Réparation effectuée</label>
+                                        <input type="text" class="form-control" id="inputRepEff" name="rep_eff" placeholder="Entrez la réparation effectuée" required> -->
+                                        {{ form.REP_EFF.label(class="form-label") }}
+                                        {% if form.REP_EFF.errors %}
+                                            {{ form.REP_EFF(class="form-control is-invalid") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.REP_EFF.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.REP_EFF(class="form-control") }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-12">
+                                        <!-- <label for="inputOrgChang" class="form-label">Organe changé</label>
+                                        <input type="text" class="form-control" id="inputOrgChang" name="org_chang" placeholder="Entrez l'organisation du changement" required> -->
+                                        {{ form.ORG_CHANG.label(class="form-label") }}
+                                        {% if form.ORG_CHANG.errors %}
+                                            {{ form.ORG_CHANG(class="form-control is-invalid") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.ORG_CHANG.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.ORG_CHANG(class="form-control") }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-12">
+                                      {{ form.AVIS.label(class="form-check-label") }}
+                                      <small class="form-text text-muted">(check if true)</small>
+                                      {% if form.AVIS.errors %}
+                                          {{ form.AVIS(class="form-check is-invalid") }}
+                                          <div class="invalid-feedback">
+                                              {% for error in form.AVIS.errors %}
+                                                  <span>{{ error }}</span>
+                                              {% endfor %}
+                                          </div>
+                                      {% else %}
+                                          {{ form.AVIS(class="form-check") }}
+                                      {% endif %}
+                                    </div>
+                                   
+                                    <div class="text-center">
+                                        {{ form.submit(class="btn btn-primary") }}
+                                        <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="col-lg-6" style="margin-left:250px">
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Aircraft</h5>
+
+      <!-- Aircraft Form -->
+      <form method="POST" action="" class="row g-3" >
+        {{ form.hidden_tag() }}
+        <!-- Type d'avion -->
+        <div class="col-12">
+          {{ form.TYPAV.label(class="form-label") }}
+          {% if form.TYPAV.errors %}
+              {{ form.TYPAV(class="form-control is-invalid ", placeholder="Ex:  A320") }}
+              <div class="invalid-feedback">
+                  {% for error in form.TYPAV.errors %}
+                      <span>{{ error }}</span>
+                  {% endfor %}
+              </div>
+          {% else %}
+              {{ form.TYPAV(class="form-control", placeholder="Ex:  A320") }}
+          {% endif %}
+        </div>
+        
+        <!-- Date de mise en service -->
+        <div class="col-12">
+          {{ form.DATMS.label(class="form-label") }}
+          {% if form.DATMS.errors %}
+              {{ form.DATMS(class="form-control is-invalid") }}
+              <div class="invalid-feedback">
+                  {% for error in form.DATMS.errors %}
+                      <span>{{ error }}</span>
+                  {% endfor %}
+              </div>
+          {% else %}
+              {{ form.DATMS(class="form-control") }}
+          {% endif %}
+
+        </div> 
+        <!-- Boutons Submit et Reset -->
+        <div class="text-center">
+          {{ form.submit(class="btn btn-primary") }}
+          <button type="reset" class="btn btn-secondary">Reset</button>
+        </div>
+      </form>
+      <!-- end Aircraft Form -->
+
+    </div>
+  </div>
+</div>
+{% endblock content %}
+    
