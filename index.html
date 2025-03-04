@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Portfolio Website </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" alt="logo" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onClick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onClick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p> Software Engineer & Data Scientist</p>
+          <h1>Hi ,I'm <span>Nawal</span><br>Ichene</h1>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!---------about---------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/3.jpg" alt="profile">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I am a passionate Computer Science and Data Engineering student with strong expertise in programming, data analysis, and database management. I thrive on solving complex problems and contributing to innovative projects that drive technological advancements</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab( 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab( 'experience')">Experience</p>
+            <p class="tab-links" onclick="opentab( 'education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming</span><br>Proficient in Python, Java, JavaScript, HTML, CSS.</li>
+              <li><span>Database Management</span><br>Skilled in MySQL and data analysis using pandas and NumPy.</li>
+              <li><span>Version Controlt</span><br>Knowledgeable in Git and GitHub.</li>
+              <li><span>Soft Skills</span><br>Strong problem-solving, teamwork, analytical thinking, and communication skills.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Internship (Upcoming – July 2025)</span><br>[Nom de l’entreprise ou organisation]<br>Practical experience in data engineering and software development.</li>
+              <!--<li><span>*******</span><br>******</li>
+              <li><span>******</span><br>*******</li>-->
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Baccalaureate</span><br>Mathematical Sciences (B SM B) – 2022 (Témara)</li>
+              <li><span>DEUG</span><br>Mathematics and Computer Science – 2024<br>
+                Mohammed V University, Faculty of Sciences, Rabat</li>
+              <li><span>Engineering (Expected) </span><br>1st Year of Data Engineering – 2027<br>
+                National School of Applied Sciences (ENSA), Khouribga</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!---------services---------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fas fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Building responsive and user-friendly websites and web applications</p>
+          <!--<a href="#">Read More</a>-->
+        </div>
+        <div class="services-col-2">
+          <i class="fas fa-crop-alt"></i>
+          <h2>App Development</h2>
+          <p>Building Android and iOS apps with a focus on user experience</p>
+         <!-- <a href="#">Read More</a>-->
+        </div>
+        <div class="services-col-3">
+          <i class="fab fa-app-store"></i>
+          <h2>Data Analysis</h2>
+          <p>Collecting, analyzing, and interpreting data to drive business decisions</p>
+          <!--<a href="#">Read More</a>-->
+        </div>
+      </div>
+    </div>
+<!--------portfolio---------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My work</h1>
+    <div class="work-list">
+        <div class="work">
+          <img src="images/44.png" alt="work-1">
+          <div class="layer">
+            <h3>Pomodoro Technique Website</h3>
+            <p>
+              This website helps users manage their time using the Pomodoro Technique, featuring a simple timer for 25-minute work intervals followed by breaks. It includes task lists and performance tracking, designed to boost productivity and focus.
+            </p>
+            <a href="https://nawalich.github.io/pomodoro/"><i class="fas fa-external-link-alt"></i> </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/Airlines.webp" alt="work-1">
+          <div class="layer">
+            <h3>Airline Management System</h3>
+            <p>
+              Developed a system to manage flights, aircraft, and personnel for an airline. Utilized MySql and SQLAlchemy for data management, with a full-stack web application built in Python, Flask, HTML, CSS, and JavaScript, optimizing system performance.
+            </p>
+            <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/33.png" alt="work-1">
+          <div class="layer">
+            <h3>Faculty Homepage Web Development</h3>
+            <p>
+              I designed and developed the official homepage for the Faculty of Science, Rabat, and user-friendly website using HTML, CSS, and JavaScript. I implemented a backend system for real-time content updates, allowing easy management by faculty members. The project focused on optimizing performance, ensuring fast loading times and smooth navigation, while prioritizing usability and accessibility for all users. Collaboration with faculty ensured the website met their needs and allowed for continuous improvements.
+            </p>
+            <a href="https://nawal197.github.io/facult-_des_sciencesgithub.io/"><i class="fas fa-external-link-alt"></i> </a>
+          </div>
+        </div>
+        </div>
+        <a href="#" class="btn">see More</a>
+        </div>
+</div>
+<!-------contact------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p> <i class="fas fa-paper-plane"></i> nawal.ichene@um5r.ac.ma</p>
+          <p> <i class="fas fa-phone-square-alt"></i> +212 643613792</p>
+          <p>Beni Amir ,Khouribga</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <a href="https://fr.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <a href="cvfrr.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form  name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        copyright - 2025 - Portfolio <i class="fas fa-heart"></i>
+      </p>
+    </div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabName){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
+
+    }
+
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right = "0px";
+    }
+    function closemenu(){
+      sidemenu.style.left = "-200px";
+    }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz0FkkkT9w7ikSc2wkVxUBigUiE69HINMUDds4LJqJujNQhEwrXPAxnZA8xDzZ6dBlxxg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function() {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+         
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+</body>
+</html>
