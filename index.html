@@ -155,7 +155,7 @@
           <a href="cvfrr.pdf" download class="btn btn2">Download CV</a>
         </div>
         <div class="contact-right">
-          <form  name="submit-to-google-sheet">
+          <form  action="save_contact.php" method="post">
             <input type="text" name="Name" placeholder="Full Name" required>
             <input type="email" name="Email" placeholder="Your Email" required>
             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
@@ -197,24 +197,41 @@
     }
 
   </script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz0FkkkT9w7ikSc2wkVxUBigUiE69HINMUDds4LJqJujNQhEwrXPAxnZA8xDzZ6dBlxxg/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById('msg')
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          msg.innerHTML = "Message sent successfully"
-          setTimeout(function() {
-            msg.innerHTML = ""
-          }, 5000)
-          form.reset()
-         
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+  <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST["name"]);
+    $email = htmlspecialchars($_POST["email"]);
+    $message = htmlspecialchars($_POST["message"]);
+    
+    // Nom du fichier CSV
+    $file = "contacts.csv";
 
-  </script>
+    // Vérifier si le fichier existe pour ajouter l'en-tête
+    $file_exists = file_exists($file);
+
+    // Ouvrir le fichier en mode ajout
+    $handle = fopen($file, "a");
+
+    if ($handle) {
+        // Ajouter l'en-tête si le fichier est nouveau
+        if (!$file_exists) {
+            fputcsv($handle, ["Nom", "Email", "Message"]);
+        }
+
+        // Écrire les données dans le fichier CSV
+        fputcsv($handle, [$name, $email, $message]);
+
+        // Fermer le fichier
+        fclose($handle);
+        
+        echo "Merci ! Votre message a été enregistré.";
+    } else {
+        echo "Erreur : Impossible d'enregistrer les données.";
+    }
+} else {
+    echo "Accès non autorisé.";
+}
+?>
+
 </body>
 </html>
