@@ -197,41 +197,26 @@
     }
 
   </script>
-  <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST["name"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $message = htmlspecialchars($_POST["message"]);
-    
-    // Nom du fichier CSV
-    $file = "contacts.csv";
+  
+       <script>
+        function sendForm(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+            
+            let formData = new FormData(document.getElementById("contactForm"));
 
-    // Vérifier si le fichier existe pour ajouter l'en-tête
-    $file_exists = file_exists($file);
-
-    // Ouvrir le fichier en mode ajout
-    $handle = fopen($file, "a");
-
-    if ($handle) {
-        // Ajouter l'en-tête si le fichier est nouveau
-        if (!$file_exists) {
-            fputcsv($handle, ["Nom", "Email", "Message"]);
+            fetch("save_contact.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("messageResult").innerHTML = data; // Affiche la réponse du serveur
+                document.getElementById("contactForm").reset(); // Réinitialise le formulaire
+            })
+            .catch(error => console.error("Erreur :", error));
         }
+    </script>
 
-        // Écrire les données dans le fichier CSV
-        fputcsv($handle, [$name, $email, $message]);
-
-        // Fermer le fichier
-        fclose($handle);
-        
-        echo "Merci ! Votre message a été enregistré.";
-    } else {
-        echo "Erreur : Impossible d'enregistrer les données.";
-    }
-} else {
-    echo "Accès non autorisé.";
-}
-?>
 
 </body>
 </html>
